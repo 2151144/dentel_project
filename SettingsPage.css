@@ -1,0 +1,124 @@
+/* الخلفية المتدرجة لكامل الصفحة */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #333, #ff6600, #00bcd4);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* الرسالة الترحيبية للمستخدم */
+.welcome-popup {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ff6600;
+  padding: 20px;
+  border-radius: 12px;
+  color: #e65100;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeSlideDown 0.6s ease-out;
+  z-index: 10;
+  font-size: 18px;
+}
+
+@keyframes fadeSlideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* صندوق التسجيل */
+.register-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  backdrop-filter: blur(8px);
+  z-index: 2;
+  animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* عنوان الصفحة */
+.register-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* الحقول */
+.register-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #f3f3f3;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* زر التسجيل */
+.register-box button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff6600, #00bcd4);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.3s;
+}
+
+.register-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 188, 212, 0.3);
+}
+
+/* النص أسفل الزر */
+.register-box p {
+  margin-top: 15px;
+  color: #666;
+  text-align: center;
+}
+
+.register-box span {
+  color: #ff6600;
+  cursor: pointer;
+  font-weight: bold;
+}

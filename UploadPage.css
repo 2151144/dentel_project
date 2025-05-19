@@ -1,0 +1,137 @@
+.upload-container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f0faff, #d0f0f0, #b0e0e6);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+
+/* الصندوق الأزرق حول مكان رفع الصورة */
+.upload-box {
+  border: 3px dashed #00aaff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  background-color: rgba(240, 248, 255, 0.6);
+  margin: 20px 0;
+  transition: 0.3s;
+}
+.upload-box:hover {
+  background-color: rgba(240, 248, 255, 0.8);
+  transform: scale(1.02);
+}
+
+/* الزخارف المتحركة */
+@keyframes floatingShape {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(10deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.decorative-shape {
+  position: absolute;
+  opacity: 0.07;
+  font-size: 120px;
+  animation: floatingShape 6s infinite ease-in-out;
+  pointer-events: none;
+}
+
+.decorative-shape.shape1 { top: 20px; left: 20px; animation-delay: 0s; }
+.decorative-shape.shape2 { top: 100px; right: 30px; animation-delay: 2s; }
+.decorative-shape.shape3 { bottom: 50px; left: 40px; animation-delay: 1s; }
+.decorative-shape.shape4 { bottom: 80px; right: 60px; animation-delay: 3s; }
+
+/* الأزرار */
+.analyze-button, .clear-button, .lang-btn {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.analyze-button {
+  background-color: #00796b;
+}
+.analyze-button:hover {
+  transform: scale(1.05);
+  background-color: #00695c;
+}
+
+.clear-button {
+  background-color: #1976d2;
+}
+.clear-button:hover {
+  transform: scale(1.05);
+  background-color: #0d47a1;
+}
+
+.lang-btn {
+  background-color: #ff9800;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.lang-btn:hover {
+  background-color: #ef6c00;
+}
+
+/* المعاينة */
+.preview-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* نتائج التشخيص */
+.results-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.disease-result {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: left;
+}
+.disease-result h2 {
+  color: #00796b;
+  margin-bottom: 8px;
+}
+.disease-result p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* زر اختيار الصورة داخل الصندوق */
+.file-input-label {
+  display: inline-block;
+  cursor: pointer;
+}
+.custom-file-button {
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.custom-file-button:hover {
+  background-color: #0097a7;
+}
