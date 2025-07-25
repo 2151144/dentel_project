@@ -1,0 +1,29 @@
+====================================================================
+LICENSE AGREEMENT – PRIVATE & PROPRIETARY PROJECT
+====================================================================
+
+Project Title: Dental Disease Detection System with Chatbot Assistant  
+Author: Abdelkhalek Soudy  
+Year: 2025  
+All Rights Reserved © Abdelkhalek Soudy
+
+====================================================================
+
+This project, including all its source code, models, assets, and documentation, is the sole intellectual property of **Abdelkhalek Soudy**.
+
+You are NOT permitted to:
+
+- Copy, redistribute, or share any part of this project.
+- Modify or republish the source code.
+- Use it for commercial, academic, or personal purposes without explicit written permission.
+- Submit this project, in whole or in part, as part of another academic or professional submission.
+
+Any unauthorized use, reproduction, or distribution of this project will be considered a direct violation of intellectual property rights and may result in legal action.
+
+If you are interested in collaboration, licensing, or commercial use, please contact the author.
+
+====================================================================
+Contact:
+abdelkhaleksoudy@gmail.com  
+Cairo, Egypt
+====================================================================
