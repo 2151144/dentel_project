@@ -1,3 +1,12 @@
+/*
+  ==============================================================
+  Author: Abdelkhalek Soudy
+  Project: Dental Disease Detection and Chatbot Assistant (Frontend)
+  Date: 2025
+  All rights reserved © Abdelkhalek Soudy
+  ==============================================================
+*/
+
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PatientPage.css"; // استيراد ملف الـ CSS
